@@ -180,14 +180,41 @@ lightbox.addEventListener('touchend', e => {
 }, { passive: true });
 
 // ============================================================
-// 7. スムーススクロール（href="#id" の a タグ全般）
+// 7. カスタムイージングスクロール（href="#id" の a タグ全般）
 // ============================================================
+
+/**
+ * easeInOutQuart: 最初ゆっくり→加速→ゆっくり止まる、アニメーションらしい動き
+ */
+function easeInOutQuart(t) {
+  return t < 0.5
+    ? 8 * t * t * t * t
+    : 1 - Math.pow(-2 * t + 2, 4) / 2;
+}
+
+function animateScrollTo(targetY, duration) {
+  const startY = window.scrollY;
+  const diff   = targetY - startY;
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed  = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease     = easeInOutQuart(progress);
+    window.scrollTo(0, startY + diff * ease);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (!target) return;
     e.preventDefault();
-    const offset = target.getBoundingClientRect().top + window.scrollY - 72;
-    window.scrollTo({ top: offset, behavior: 'smooth' });
+    const targetY = target.getBoundingClientRect().top + window.scrollY - 72;
+    animateScrollTo(targetY, 900); // 900ms でアニメーション（お好みで調整可）
   });
 });
