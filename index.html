@@ -77,118 +77,90 @@
         <h2 class="section-title">作品一覧</h2>
       </div>
 
-      <!-- タブ -->
-      <div class="tab-buttons reveal">
-        <button class="tab-btn active" data-tab="personal" id="tab-personal">Personal</button>
-        <button class="tab-btn" data-tab="works" id="tab-works">Works</button>
+      <!-- 作品の順番.csv から読み込み、同じ一覧を絞り込む -->
+      <div class="tab-buttons reveal" role="group" aria-label="作品の絞り込み">
+        <button type="button" class="tab-btn active" data-tab="all" aria-pressed="true" aria-controls="gallery-grid">All</button>
+        <button type="button" class="tab-btn" data-tab="personal" aria-pressed="false" aria-controls="gallery-grid">Personal</button>
+        <button type="button" class="tab-btn" data-tab="works" aria-pressed="false" aria-controls="gallery-grid">Works</button>
       </div>
-
-      <!-- Personal タブ -->
-      <div class="tab-content active" id="tab-content-personal">
-        <div class="gallery-grid">
-          <!-- 1 -->
-          <div class="gallery-item reveal" data-src="images/personal/2025秋コンテスト大.webp" data-caption="中秋の名月">
-            <img src="images/personal/2025秋コンテスト大.webp" alt="中秋の名月" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 2 -->
-          <div class="gallery-item reveal" data-src="images/personal/能代布団.webp" data-caption="一緒に寝ましょう">
-            <img src="images/personal/能代布団.webp" alt="一緒に寝ましょう" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 3 -->
-          <div class="gallery-item reveal" data-src="images/personal/水着イズナ.webp" data-caption="誕生日おめでとうイズナ">
-            <img src="images/personal/水着イズナ.webp" alt="誕生日おめでとうイズナ" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 4 -->
-          <div class="gallery-item reveal" data-src="images/personal/凪紗2026.webp" data-caption="誕生日おめでとう凪紗">
-            <img src="images/personal/凪紗2026.webp" alt="誕生日おめでとう凪紗" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 5 -->
-          <div class="gallery-item reveal" data-src="images/personal/OTBN.webp" data-caption="制服御局">
-            <img src="images/personal/OTBN.webp" alt="制服御局" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 6 -->
-          <div class="gallery-item reveal" data-src="images/personal/八雲べに.webp" data-caption="伸びーっ">
-            <img src="images/personal/八雲べに.webp" alt="伸びーっ" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 7 -->
-          <div class="gallery-item reveal" data-src="images/personal/チャイナ丸窓白百合2.webp" data-caption="白百合ちゃん">
-            <img src="images/personal/チャイナ丸窓白百合2.webp" alt="白百合ちゃん" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 8 -->
-          <div class="gallery-item reveal" data-src="images/personal/ドレス瀬織.webp" data-caption="純白">
-            <img src="images/personal/ドレス瀬織.webp" alt="純白" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 9 -->
-          <div class="gallery-item reveal" data-src="images/personal/ちえりちゃん.webp" data-caption="誕生日おめちぇり">
-            <img src="images/personal/ちえりちゃん.webp" alt="誕生日おめちぇり" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 10 -->
-          <div class="gallery-item reveal" data-src="images/personal/セスちゃん.webp" data-caption="あら、何かしら？">
-            <img src="images/personal/セスちゃん.webp" alt="あら、何かしら？" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 11 -->
-          <div class="gallery-item reveal" data-src="images/personal/2026バレンタインオロチちゃん.webp" data-caption="受け取ってもらえるかな…">
-            <img src="images/personal/2026バレンタインオロチちゃん.webp" alt="受け取ってもらえるかな…" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 12 -->
-          <div class="gallery-item reveal" data-src="images/personal/乳乗せ宇迦.webp" data-caption="ちょっとこの後付き合いなさいよ">
-            <img src="images/personal/乳乗せ宇迦.webp" alt="ちょっとこの後付き合いなさいよ" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 13 -->
-          <div class="gallery-item reveal" data-src="images/personal/縁側丸窓2.webp" data-caption="最高の夏">
-            <img src="images/personal/縁側丸窓2.webp" alt="最高の夏" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 14 -->
-          <div class="gallery-item reveal" data-src="images/personal/2024冬コンテスト半.webp" data-caption="足湯">
-            <img src="images/personal/2024冬コンテスト半.webp" alt="足湯" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 15 -->
-          <div class="gallery-item reveal" data-src="images/personal/バニー3.webp" data-caption="一勝負していく？">
-            <img src="images/personal/バニー3.webp" alt="一勝負していく？" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-        </div>
+      <p id="gallery-status" role="status" hidden></p>
+      <!-- gallery:start — scripts/update-gallery.py でCSVから更新 -->
+      <div class="gallery-grid" id="gallery-grid" aria-busy="false">
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/2025%E7%A7%8B%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%A4%A7.webp" data-caption="中秋の名月" aria-label="中秋の名月を拡大表示">
+          <img src="images/personal/2025%E7%A7%8B%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%A4%A7.webp" alt="中秋の名月" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="works" data-src="images/works/2026%E8%B6%85%E3%81%AB%E3%82%93%E3%81%98%E3%82%83%E3%83%BC%E3%81%A8%E5%8E%9F%E5%AF%B8%E5%A4%A7.webp" data-caption="狐の嫁入り｜2026年6月の超にんじゃーとSBTイラスト" aria-label="狐の嫁入りを拡大表示">
+          <img src="images/works/2026%E8%B6%85%E3%81%AB%E3%82%93%E3%81%98%E3%82%83%E3%83%BC%E3%81%A8%E5%8E%9F%E5%AF%B8%E5%A4%A7.webp" alt="狐の嫁入り" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E8%83%BD%E4%BB%A3%E5%B8%83%E5%9B%A3.webp" data-caption="一緒に寝ましょう" aria-label="一緒に寝ましょうを拡大表示">
+          <img src="images/personal/%E8%83%BD%E4%BB%A3%E5%B8%83%E5%9B%A3.webp" alt="一緒に寝ましょう" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E6%B0%B4%E7%9D%80%E3%82%A4%E3%82%BA%E3%83%8A.webp" data-caption="誕生日おめでとうイズナ" aria-label="誕生日おめでとうイズナを拡大表示">
+          <img src="images/personal/%E6%B0%B4%E7%9D%80%E3%82%A4%E3%82%BA%E3%83%8A.webp" alt="誕生日おめでとうイズナ" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E5%87%AA%E7%B4%972026.webp" data-caption="誕生日おめでとう凪紗" aria-label="誕生日おめでとう凪紗を拡大表示">
+          <img src="images/personal/%E5%87%AA%E7%B4%972026.webp" alt="誕生日おめでとう凪紗" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/OTBN.webp" data-caption="制服御局" aria-label="制服御局を拡大表示">
+          <img src="images/personal/OTBN.webp" alt="制服御局" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E5%85%AB%E9%9B%B2%E3%81%B9%E3%81%AB.webp" data-caption="伸びーっ" aria-label="伸びーっを拡大表示">
+          <img src="images/personal/%E5%85%AB%E9%9B%B2%E3%81%B9%E3%81%AB.webp" alt="伸びーっ" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="works" data-src="images/works/%E5%A4%8F%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E7%94%A8%E5%AE%87%E8%BF%A6%E3%82%B5%E3%83%9E%E3%83%BC.webp" data-caption="宇迦Summer｜2024CryptoNinjaファンアートコンテスト夏の告知イラスト" aria-label="宇迦Summerを拡大表示">
+          <img src="images/works/%E5%A4%8F%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E7%94%A8%E5%AE%87%E8%BF%A6%E3%82%B5%E3%83%9E%E3%83%BC.webp" alt="宇迦Summer" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="works" data-src="images/works/%E3%83%89%E3%83%AC%E3%82%B9%E7%99%BD%E7%99%BE%E5%90%88%E3%82%A2%E3%83%83%E3%83%97.webp" data-caption="白百合ちゃん｜pixivリクエストでの依頼" aria-label="白百合ちゃんを拡大表示">
+          <img src="images/works/%E3%83%89%E3%83%AC%E3%82%B9%E7%99%BD%E7%99%BE%E5%90%88%E3%82%A2%E3%83%83%E3%83%97.webp" alt="白百合ちゃん" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E3%83%81%E3%83%A3%E3%82%A4%E3%83%8A%E4%B8%B8%E7%AA%93%E7%99%BD%E7%99%BE%E5%90%882.webp" data-caption="白百合ちゃん" aria-label="白百合ちゃんを拡大表示">
+          <img src="images/personal/%E3%83%81%E3%83%A3%E3%82%A4%E3%83%8A%E4%B8%B8%E7%AA%93%E7%99%BD%E7%99%BE%E5%90%882.webp" alt="白百合ちゃん" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E3%83%89%E3%83%AC%E3%82%B9%E7%80%AC%E7%B9%94.webp" data-caption="純白" aria-label="純白を拡大表示">
+          <img src="images/personal/%E3%83%89%E3%83%AC%E3%82%B9%E7%80%AC%E7%B9%94.webp" alt="純白" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E3%81%A1%E3%81%88%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93.webp" data-caption="誕生日おめちぇり" aria-label="誕生日おめちぇりを拡大表示">
+          <img src="images/personal/%E3%81%A1%E3%81%88%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93.webp" alt="誕生日おめちぇり" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E3%82%BB%E3%82%B9%E3%81%A1%E3%82%83%E3%82%93.webp" data-caption="あら、何かしら？" aria-label="あら、何かしら？を拡大表示">
+          <img src="images/personal/%E3%82%BB%E3%82%B9%E3%81%A1%E3%82%83%E3%82%93.webp" alt="あら、何かしら？" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/2026%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E3%82%AA%E3%83%AD%E3%83%81%E3%81%A1%E3%82%83%E3%82%93.webp" data-caption="受け取ってもらえるかな…" aria-label="受け取ってもらえるかな…を拡大表示">
+          <img src="images/personal/2026%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E3%82%AA%E3%83%AD%E3%83%81%E3%81%A1%E3%82%83%E3%82%93.webp" alt="受け取ってもらえるかな…" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E4%B9%B3%E4%B9%97%E3%81%9B%E5%AE%87%E8%BF%A6.webp" data-caption="ちょっとこの後付き合いなさいよ" aria-label="ちょっとこの後付き合いなさいよを拡大表示">
+          <img src="images/personal/%E4%B9%B3%E4%B9%97%E3%81%9B%E5%AE%87%E8%BF%A6.webp" alt="ちょっとこの後付き合いなさいよ" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E7%B8%81%E5%81%B4%E4%B8%B8%E7%AA%932.webp" data-caption="最高の夏" aria-label="最高の夏を拡大表示">
+          <img src="images/personal/%E7%B8%81%E5%81%B4%E4%B8%B8%E7%AA%932.webp" alt="最高の夏" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/2024%E5%86%AC%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%8D%8A.webp" data-caption="足湯" aria-label="足湯を拡大表示">
+          <img src="images/personal/2024%E5%86%AC%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%8D%8A.webp" alt="足湯" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
+        <button type="button" class="gallery-item reveal" data-tab="personal" data-src="images/personal/%E3%83%90%E3%83%8B%E3%83%BC3.webp" data-caption="一勝負していく？" aria-label="一勝負していく？を拡大表示">
+          <img src="images/personal/%E3%83%90%E3%83%8B%E3%83%BC3.webp" alt="一勝負していく？" draggable="false" loading="lazy" />
+          <span class="gallery-overlay" aria-hidden="true"><span class="zoom-icon">＋</span></span>
+        </button>
       </div>
-
-
-      <!-- Works タブ -->
-      <div class="tab-content" id="tab-content-works">
-        <div class="gallery-grid">
-          <!-- 1 -->
-          <div class="gallery-item reveal" data-src="images/works/2026超にんじゃーと原寸大.webp"
-            data-caption="狐の嫁入り｜2026年6月の超にんじゃーとSBTイラスト">
-            <img src="images/works/2026超にんじゃーと原寸大.webp" alt="狐の嫁入り" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 2 -->
-          <div class="gallery-item reveal" data-src="images/works/夏コンテスト用宇迦サマー.webp"
-            data-caption="宇迦Summer｜2024 CryptoNinja ファンアートコンテスト 告知イラスト">
-            <img src="images/works/夏コンテスト用宇迦サマー.webp" alt="宇迦Summer" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-          <!-- 3 -->
-          <div class="gallery-item reveal" data-src="images/works/ドレス白百合アップ.webp"
-            data-caption="白百合ちゃん｜Pixivリクエスト キャラクターイラスト">
-            <img src="images/works/ドレス白百合アップ.webp" alt="白百合ちゃん" draggable="false" loading="lazy" />
-            <div class="gallery-overlay"><span class="zoom-icon">＋</span></div>
-          </div>
-        </div>
-        <p class="works-note reveal">※ 掲載許可をいただいた作品のみ掲載しております。<br>過去のご依頼実績はお問い合わせ時にお伝えします。</p>
-      </div>
+      <!-- gallery:end -->
+      <p class="works-note reveal" id="works-note" hidden>※ 掲載許可をいただいた作品のみ掲載しております。<br>過去のご依頼実績はお問い合わせ時にお伝えします。</p>
     </div>
   </section>
 
